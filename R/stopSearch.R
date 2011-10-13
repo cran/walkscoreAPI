@@ -55,7 +55,13 @@ function(x,y,key){
                url <- rtext[[1]][grep("\"agency_url\"",rtext[[1]],fixed=TRUE)]
                url <- strsplit(url,": ",fixed=TRUE)
                url <- gsub("\"","",url[[1]][2],fixed=TRUE)
-               rlist <- list(id,rname,cat,age,url)
+               rlist <- list()
+               class(rlist) <- "RouteDetails"
+               rlist$id <- id
+               rlist$routeName <- rname
+               rlist$routeCatagory <- cat
+               rlist$routeAgency <- age
+               rlist$routeURL <- url
           }
         object <- list()
         class(object) <- "Stop2"
@@ -64,7 +70,7 @@ function(x,y,key){
         object$stopDistance <- dist
         object$stopLong <- lon
         object$stopLat <- lat
-        object$routeList <- rlist
+        object$routeDetails <- rlist
         slist[[i]] <- object
        }
    }

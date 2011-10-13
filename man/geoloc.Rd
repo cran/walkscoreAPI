@@ -9,8 +9,13 @@ geoloc(address, apikey)
   \item{address}{  query address (string). Do not use commas, and zip codes are not required, e.g. "1600 Pennsylvania Ave Washington DC".}
   \item{apikey}{  your Google API key (string)  }
 }
-\details{Use of this function requires a Google API key, which is different from the Walk Score API key. Get one here: http://code.google.com/apis/maps/signup.html}
-\value{Returns a vector of two numbers, the first representing the longitude and the second representing the latitude. Prints accuracy rating of geolocation.
+\details{ Use of this function requires a Google API key, which is different from the Walk Score API key. Get one here: http://code.google.com/apis/maps/signup.html}
+\value{ Returns an object of class \code{GoogleGeoloc}, basically a list of the following elements:
+  \item{coordinates}{  A vector of two numbers, the first representing the longitude and the second representing the latitude.}
+  \item{accuracy}{  Accuracy rating of geolocation.  }
+  \item{city}{  City containing the requested address  }
+  \item{state}{  State containing the requested address  }
+  \item{country}{  Country containing the requested address  }
 }
 \references{  http://code.google.com/apis/gears/api_geolocation.html  }
 \author{John Whalen}

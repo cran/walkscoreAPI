@@ -16,10 +16,10 @@ getTS(x, y, city, state, key)
 \details{  The Transit Score API call only works in supported cities. Use the functions "checkTSsupport" or "getTScities" to check for support in the city of interest. Also note that calls should use the core city name, even when the query location is technically in a suburb of the core city.
 }
 \value{Returns an object of class \code{TransitScore}, basically a list of the following elements:
- \item{transitscore }{Transit Score of query location.}
- \item{url }{Link to Walk Score page associated with your query.}
- \item{description }{Qualitative description of query location regarding transit.}
- \item{summary}{Summary of nearby routes and stops.}
+ \item{transitscore }{  Transit Score of query location.}
+ \item{url }{  Link to Walk Score page associated with your query.}
+ \item{description }{  Qualitative description of query location regarding transit.}
+ \item{summary}{  Summary of nearby routes and stops.}
 }
 \references{http://www.walkscore.com/professional/public-transit-api.php}
 \author{John Whalen}

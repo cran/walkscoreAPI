@@ -11,7 +11,7 @@ checkTSsupport(city, state, key)
   \item{key}{  your Walk Score API key (string)  }
 }
 \details{ Transit Score only works in select cities. }
-\value{TRUE if city is supported, FALSE otherwise
+\value{ TRUE if city is supported, FALSE otherwise
 }
 \references{  http://www.walkscore.com/professional/public-transit-api.php  }
 \author{  John Whalen  }

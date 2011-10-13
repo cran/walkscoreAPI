@@ -28,7 +28,22 @@ function(routeid,key){
        geom <- strsplit(string5,": ")
        geom <- gsub("\"","",geom[[1]][2],fixed=TRUE)
        geom <- gsub(", ","",geom)
-        
+       geom <- gsub("LINESTRING","",geom)
+       geom <- gsub("(","",geom,fixed=TRUE)
+       geom <- gsub(")","",geom,fixed=TRUE)
+       geom <- strsplit(geom,",")
+       if (length(geom)>1){
+           geolist <- data.frame()
+           for (i in 1:length(geom[[1]])){
+               coords <- strsplit(geom[[1]][i]," ")
+               geolist[i,1] <- as.numeric(coords[[1]][1])
+               geolist[i,2] <- as.numeric(coords[[1]][2])
+           }
+       names(geolist) <- c("X","Y")
+       }
+       else {
+           geolist <- "Unavailable" 
+       }      
        slist <- c()
        for (i in (sbegin+1):(send-1)){
             str <- X[i]
@@ -49,7 +64,7 @@ function(routeid,key){
     object$routeCatagory <- cat
     object$agengy <- age
     object$agencyURL <- url 
-    object$routeGeometry <- geom
+    object$routeGeometry <- geolist
     object$stopList <- slist
     return(object)
   }

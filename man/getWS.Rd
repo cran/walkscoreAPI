@@ -8,8 +8,9 @@
   \item{y}{  latitude of query location (numeric)  }
   \item{key}{  your Walk Score API key (string), see Details below  }
 }
-\details{Note that the call uses longitude and latitude coordintes and not addresses like the website interface. It is strongly recomended that Google Geolocation is used to convert addresses to coordinates because this is the method used by the Walk Score website, and will result in the same Walk Score as entering the address into the website interface. The function "geoloc" is a tool for using the Google Geolocation API.}
-\value{Returns an object of class \code{WalkScore}, basically a list of the following elements:
+\details{Note that the call uses longitude and latitude coordintes and not addresses like the website interface. It is strongly recomended that Google Geolocation is used to convert addresses to coordinates because this is the method used by the Walk Score website, and will result in the same Walk Score as entering the address into the website interface. The function "geoloc" in this package is a tool for using the Google Geolocation API.}
+\value{ Otherwise Returns an object of class \code{WalkScore}, basically a list of the following elements:
+  \item{status}{  Status code of the request. Status of 1 indicates a successful call. See the Walk Score API page for interpretation of other codes.  }
   \item{walkscore}{  Walk Score of query location.  } 
   \item{description}{  Qualitative description of location.  }
   \item{updated}{  Date and time of most recent update to this location's Walk Score.  }

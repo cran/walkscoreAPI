@@ -11,11 +11,11 @@ stopDetails(stopid, key)
 }
 \details{Stop ID is a unique string of characters used to identfy stops. They can be obtained through the search functions provided in this library.}
 \value{Returns an object of class \code{StopDetails}, basically a list of the following elements:
- \item{stopID }{ID of the stop of interest (same as input ID)}
- \item{stopName }{Name of stop of interest.}
- \item{stopLong }{Longitude of stop of interest.}
- \item{stopLat }{Latitude of stop of interest.}
- \item{routeList }{List of route ID's which serve the stop of interest. }
+ \item{stopID }{ ID of the stop of interest (same as input ID)}
+ \item{stopName }{ Name of stop of interest.}
+ \item{stopLong }{ Longitude of stop of interest.}
+ \item{stopLat }{ Latitude of stop of interest.}
+ \item{routeList }{ List of route ID's which serve the stop of interest. }
 }
 \references{  http://www.walkscore.com/professional/public-transit-api.php  }
 \author{ John Whalen }
