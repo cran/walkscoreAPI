@@ -3,13 +3,13 @@
 \alias{walkscoreAPI}
 \docType{package}
 \title{Walk Score and Transit Score API}
-\description{A collection of functions to perform the Application Programming Interface (API) calls associated with the Walk Score website (www.walkscore.com) within the R environment. These functions can be used to query the Walk Score and Tranist Score database for a wide variety of information using R scripts. This package includes the simple Walk Score and Transit Score API calls, which return the scores associated with an input location, as well as calls which return some data used to calculate the scores. These functions are especially useful for mass data collection and gathering Walk Score and Transit Score values for large lists of locations. }
+\description{A collection of functions to perform the Application Programming Interface (API) calls associated with the Walk Score website (www.walkscore.com) within the R environment. These functions can be used to query the Walk Score and Transit Score database for a wide variety of information using R scripts. This package includes the simple Walk Score and Transit Score API calls, which return the scores associated with an input location, as well as calls which return some data used to calculate the scores. These functions are especially useful for mass data collection and gathering Walk Score and Transit Score values for large lists of locations. }
 \details{
 \tabular{ll}{
 Package: \tab walkscoreAPI\cr
 Type: \tab Package\cr
-Version: \tab 1.1\cr
-Date: \tab 2011-10-13\cr
+Version: \tab 1.2\cr
+Date: \tab 2012-01-04\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
 }

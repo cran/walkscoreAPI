@@ -33,7 +33,7 @@ function(x,y,key){
     }
     else {
        wscore <- "NA"
-       desc <- "NA"
+       descr <- "NA"
        update <- "NA"
        snlo <- "NA"
        snla <- "NA"

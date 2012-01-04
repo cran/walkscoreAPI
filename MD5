@@ -1,9 +1,10 @@
-903c4712994b479b565b72a8a2af32b0 *DESCRIPTION
+45d62c7fb7fc12d1408114b78b263157 *DESCRIPTION
+9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
 1fc5e00a6ae8d9a569cdc4fbd726b7f4 *R/checkTSsupport.R
 dafb31f957634cbe8acc7088e0283385 *R/geoloc.R
 278c0c41372b37029b2e12e1d57c05e7 *R/getTS.R
 0cf243945e05fafcc49b81d6356b19e2 *R/getTScities.R
-8dcf393515a8003ba61f6f35adb85254 *R/getWS.R
+e1055522cb6d415486f27d8f8ce3b28b *R/getWS.R
 950557b485a2fe37c7f3f895f97875a1 *R/networkSearch.R
 ba5d1570f357dc6b84cf27670ce6e8ea *R/routeDetails.R
 5235b7581c79b9499b68922f66ea2001 *R/stopDetails.R
@@ -18,5 +19,5 @@ c91a2d84f4090599646adc24bc934e1a *man/getWS.Rd
 c5baac2a8c43741125a1d1c1f9486afd *man/routeDetails.Rd
 444ec2c5df7b893054e82e492245a494 *man/stopDetails.Rd
 4e5c30876650c8e85dc0eb20d825fa8e *man/stopSearch.Rd
-9fb8706ca8b21422cdf3859f5c07e1f8 *man/walkscoreAPI-package.Rd
+bd2e9019161c46cb956b2f858ba137eb *man/walkscoreAPI-package.Rd
 b7faeed921ca59c789a174e0592d500c *man/walkshed.Rd
